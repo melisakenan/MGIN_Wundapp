@@ -23,13 +23,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="188dp"
-        android:text="Werte in % "
+        android:text="Werte"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.375" />
+        app:layout_constraintVertical_bias="0.337" />
 
     <AutoCompleteTextView
         android:id="@+id/eingabe"
@@ -87,14 +87,14 @@
 
     <ListView
         android:id="@+id/listview_werte"
-        android:layout_width="373dp"
-        android:layout_height="90dp"
+        android:layout_width="359dp"
+        android:layout_height="202dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintHorizontal_bias="0.692"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.681" />
+        app:layout_constraintVertical_bias="0.313" />
 
     <Button
         android:id="@+id/btnspeichern"
@@ -111,18 +111,18 @@
     <EditText
         android:id="@+id/zahlenwert"
         android:layout_width="103dp"
-        android:layout_height="68dp"
-        android:text=""
-        android:textSize="18sp"
+        android:layout_height="65dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintHorizontal_bias="0.844"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.283" />
+        app:layout_constraintVertical_bias="0.278" />
 
     <EditText
-        android:id="@+id/widget"
+        android:id="@+id/patienteneingabe"
         android:layout_width="103dp"
         android:layout_height="68dp"
         android:text=""
@@ -133,6 +133,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.408" />
+
 
     <Spinner
         android:id="@+id/spinner"
@@ -146,10 +147,27 @@
         app:layout_constraintVertical_bias="0.827" />
 
     <ListView
+        android:id="@+id/listview_patienten"
         android:layout_width="302dp"
         android:layout_height="85dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="623dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.958" />
+
+    <TextView
+        android:id="@+id/ausgaben"
+        android:layout_width="97dp"
+        android:layout_height="40dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.157" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
